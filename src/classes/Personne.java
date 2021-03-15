@@ -2,7 +2,8 @@ package classes;
 
 public class Personne {
 private String nom,prenom;
-private float poid,taille;
+private double poid,taille;
+
 public String getNom() {
 	return nom;
 }
@@ -15,19 +16,19 @@ public String getPrenom() {
 public void setPrenom(String prenom) {
 	this.prenom = prenom;
 }
-public float getPoid() {
+public double getPoid() {
 	return poid;
 }
-public void setPoid(float poid) {
+public void setPoid(double poid) {
 	this.poid = poid;
 }
-public float getTaille() {
+public double getTaille() {
 	return taille;
 }
-public void setTaille(float taille) {
+public void setTaille(double taille) {
 	this.taille = taille;
 }
-public Personne(String nom, String prenom, float poid, float taille) {
+public Personne(String nom, String prenom, double poid, double taille) {
 	super();
 	this.nom = nom;
 	this.prenom = prenom;
@@ -37,5 +38,11 @@ public Personne(String nom, String prenom, float poid, float taille) {
 public Personne() {
 	super();
 }
+@Override
+public String toString() {
+	return " [nom=" + nom + ", prenom=" + prenom + ", poid=" + poid + ", taille=" + taille + "]";
+}
+
+
 
 }
