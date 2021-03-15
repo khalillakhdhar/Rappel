@@ -41,7 +41,7 @@ public class Calcules {
 		return " vous êtes en surpoids";
 	}
 	public String toString() {
-		return "Calcules [Teste pour : "+p.toString() + "IMC=" + indice() + ", etat=" + this.interpretation() + "]";
+		return "Calcules [Teste pour : "+p.toString() + " IMC=" + indice() + ", etat=" + this.interpretation() + "]";
 	}
 	
 	
